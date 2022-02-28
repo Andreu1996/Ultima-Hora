@@ -1,0 +1,665 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    display:flex; 
+    flex-direction:column;
+    margin: 0em auto;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+header{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    margin: 1em auto;
+    width: 90%
+}
+
+footer{
+    margin-top: auto; 
+    width: 100%;
+    align-items: center;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto:700";
+}
+
+h5, h6 {
+    font-family: "Ubuntu Condensed";
+    
+}
+
+a, td, p, button{
+    font-family: "sans-serif";
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%)
+}
+
+h4 {
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%)
+}
+
+p{
+    color: hsl(0, 0%, 0%);
+    text-align: justify;
+    font-weight: 100;
+}
+
+h6{
+    text-align: left;
+}
+
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+/*====================
+======Header==========
+======================*/
+
+/*
+======today==========
+*/
+
+.topbar{
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.2rem;
+}
+
+.topbar ul{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin: 0 4rem ;
+}
+
+li{
+    font-size: 0.7em;
+    font-weight: 0.5rem;
+    margin-right: 0.5rem;
+    justify-content: center;
+}
+
+.topbar-today-News li:first-child{
+    text-transform: uppercase;
+    color: #cd0000;
+    font-weight: bold;
+}
+
+.topbar-today-News li:not(:first-child):not(:last-child)::after{
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.topbar-regions li:not(:last-child)::after{
+    padding-left: 0.25rem;
+    content: "|";
+    color: #aaa;
+}
+
+
+
+.topbar-elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4.4rem ;
+}
+
+.today-featured-news-element{
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+.today-featured-news-element{
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+.today-featured-news-element-title p{
+    color: rgb(201, 34, 34);
+    font-size: 0.8em;
+}
+
+.topbar-region{
+    display:flex;
+    justify-content: space-between;
+}
+.topbar-region-element p{
+    font-size: 0.7rem;
+
+}
+
+.topbar-region-element{
+    margin: auto 0.2rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+/*
+======main==========
+*/
+
+.main-header{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(199, 15, 15);
+    padding: 1.1rem 3.5rem;
+    top: 0%;
+}
+
+.main-header-element{
+    width: 100%;
+}
+
+
+.main-header-element-title svg{
+    fill: #fff;
+    width: 80%;
+    height: 80%;
+    margin-left: 0.5rem;
+}
+
+
+
+.main-header-element-hamburguer-icon{
+    margin: 1rem;
+}
+
+.main-header-element-hamburguer{
+    width: 32px;
+    height: 4.8px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 6px 0;
+    display: block;
+    margin: 0.4rem;
+    border-radius: 0.2em;
+}
+
+.main-header-element-flex{
+    display: flex;
+    justify-content: right;
+}
+
+.main-header-element-title h1{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-header-element-user{
+    margin: 0.2rem ;
+    padding: 0.1rem;
+}
+
+.main-header-element-user-login{
+    display: flex;
+    background-color: #e6e6e6;
+    padding: 0.2rem 0.5rem;
+}
+
+.main-header-element-user-login, .main-header-element-user-signin{
+    border-radius: 0.3em;
+}
+
+.main-header-element-user-login-text{
+    margin-right: 0.5rem;
+}
+
+.main-header-element-user-login-text p{
+    text-align: center;
+    bottom: 0%;
+}
+
+.main-header-element-user-login svg{
+    width:  1.5rem;
+    height: 1.5rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+.main-header-element-user-login-text{
+    width: 100%;
+}
+
+.main-header-element-user-signin {
+    background-color: #ffc700;
+    padding: 0.5rem 0.6rem;
+}
+
+.main-header-element-user-signin p{
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*
+======menu==========
+*/
+
+.menubar{
+    background-color: #e6e6e6;
+    border-bottom: solid 2px #ccc;
+    margin-top: 0.4%;
+    width: 100%;
+}
+
+.menubar ul{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding-top: 0.5em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0.5rem;
+    margin: 0%;
+}
+
+.menu-font-size li{
+    font-size: 1rem;
+    color: #323232;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+
+}
+
+
+
+.menubar svg{
+    height: 1.8em;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+/*====================
+======body==========
+======================*/
+
+body{
+    justify-content: center;
+}
+
+/*
+======banner==========
+*/
+
+.column{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.main-banner{
+    margin-top: 0rem;
+}
+
+.main-banner-image{
+    position: relative;
+}
+
+.close-banner{
+    position: absolute;
+    z-index: 1001rem;
+    top:0.5%;
+    right: 0.2%;
+    background-color: rgb(212, 212, 212);
+}
+
+.close-banner h3{
+    color: rgb(0, 132, 255);
+}
+
+/*
+======main-new==========
+*/
+
+.main-new{
+    height: 100%;
+    z-index: 1000;
+    margin-top: 1rem;
+}
+
+.main-new-text-title, .main-new-text-description, .main-new-text-author{
+    display: flex;
+    justify-content: center;
+    padding: 0 5rem;
+    margin-top: 0.5rem;
+}
+
+.main-new-image{
+    display: relative;
+    justify-content:center;
+}
+
+.main-new-text-title h2{
+    color: rgb(0, 0, 0);
+}
+
+.main-new-text-title h2:hover{
+    color: red;
+}
+.main-new-text-description p{
+    text-align: center;
+}
+
+.main-new-subtext{
+    position: absolute;
+    z-index: 1001;
+    bottom: 20%;
+    left: 40%;
+    background-color: rgb(17, 180, 17);
+    padding: 0.1rem 1rem;
+}
+
+.main-new-subtext p{
+    color: hsl(0, 0%, 100%);
+}
+
+/*
+======skyfall-news==========
+*/
+
+.four-columns{
+    display: flex;
+    justify-content:center;
+    column-count: 4;
+    column-gap: 4em;
+}
+
+.four-columns .column{
+    width: 5%;
+    margin: 3rem 5rem;
+}
+
+.four-columns-element-text h3{
+    font-size: 1.1rem;
+}
+
+.two-columns{
+    display: flex;
+    column-count: 2;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.two-columns .column{
+    justify-content: left;
+    width: 100%;
+    
+}
+
+.column-main-text{
+    width: 90%;
+}
+
+.two-columns .mainbar{
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.mainbar{
+    display: block;
+    width: 65%
+}
+
+.sidebar{
+    width: 100%;
+}
+
+.column-main-image{
+    position: relative;
+}
+
+.column-main-subtext{
+    position: absolute;
+    z-index: 1001;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    bottom: 0%;
+}
+
+.column-main-subtext p{
+    color: hsl(0, 0%, 100%);
+}
+
+.column-main-text-title, .column-main-text-description, .column-main-text-author{
+    margin: 0.5rem auto;
+}
+
+.column-main-columns-two-image{
+    width: 50%;
+}
+
+.column-sidebar-banner{
+    position: sticky;
+    top: 0%;
+}
+
+.mainbar-two-element{
+    margin: 2rem 1rem 0rem 0rem;
+    width: 100%;
+}
+
+.mainbar-two-element-image img{
+    width: 100%;
+}
+
+
+.mainbar-two-element-text1{
+    background-color: red;
+}
+
+.mainbar-two-element-text1, .mainbar-two-element-text2{
+    padding: 0.5rem;
+
+}
+
+.mainbar-two-element-description, .mainbar-two-element-author{
+    margin-top: 0.5rem;
+}
+
+.text-color p, .text-color h5, .text-color h6{
+    color: white;
+}
+
+.three-columns{
+    display: flex;
+    justify-content:space-between;
+    column-count: 3;
+    column-gap: 1rem;
+    margin: 1rem;
+    margin-right: 0%;
+}
+
+.three-columns .column{
+    justify-content: left;
+    display: block;
+    width: 100%;
+}
+
+
+.three-column-text{
+    display: block;
+}
+
+
+.three-column-element-text p{
+    font-size: 1.3em;
+    font-weight: 200rem;
+    text-align: left;
+}
+
+.three-column-element-title, .three-column-element-text, .three-column-element-author {
+    margin-top: 0.5rem;
+}
+
+.three-column-element-title h4{
+    color: hsl(0, 100%, 50%);
+}
+
+
+@media (max-width:479px) {
+
+/*====================
+======General=========
+======================*/
+
+    body{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main{
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .head{
+        width: 100%;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+
+/*====================
+=========Head=========
+======================*/
+
+
+/*=========TopBar=========*/
+
+    .topbar-elements-today-mobile{
+        display: none;
+    }
+
+    .topbar{
+        padding: 0.5rem 0.5rem;
+        left: 0%;
+    }
+
+    .topbar-region{
+        display: flex;
+        justify-content: center;
+    }
+    .topbar-elements{
+        display: relative;
+        justify-content: left;
+        margin: 0rem;
+    }
+
+    /*=========MainHeader=========*/
+
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(199, 15, 15);
+        padding: 1rem 0rem;
+    }
+    
+    .main-header-element-title{
+        margin-top: 1rem;
+    }
+    
+    .main-header-element-hamburguer-icon{
+        margin-top: 1rem;
+    }
+    
+    .main-header-element-hamburguer{
+        width: 30px;
+        height: 4.5px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 6px 0;
+        display: block;
+        margin: 0.4rem;
+        border-radius: 0.2em;
+    }
+    
+    .main-header-element-flex{
+        display: flex;
+    
+    }
+    
+    .main-header-element-title h1{
+        font-size: 3em;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .main-header-element-user{
+        display: flex;
+        justify-content: space-between;
+        margin: 0.2rem ;
+        padding: 0.2rem;
+    }
+    
+    .main-header-element-user-login{
+        display: flex;
+        justify-content: space-between;
+        background-color: hsl(0, 0%, 82%);
+        border-radius: 0.3em;
+        padding: 0.5rem 1rem;
+    }
+    
+    
+    
+    .main-header-element-user-signin{
+        background-color: hsl(51, 90%, 49%);
+        border-radius: 0.2em;
+        padding: 0.5rem 1rem;
+    }
+
+    .sidebar{
+        display: relative
+    }
+
+}
